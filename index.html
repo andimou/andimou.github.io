@@ -1,10 +1,506 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anastasia Dimou | Academic Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #f7f8fa;
+      color: #222;
+    }
+
+    header {
+      background: #1f2937;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: #d1d5db;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0;
+    }
+
+    nav a {
+      display: block;
+      padding: 14px 18px;
+      text-decoration: none;
+      color: #1f2937;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: #eef2ff;
+      color: #4338ca;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      color: #111827;
+    }
+
+    .item {
+      margin-bottom: 18px;
+      padding-left: 12px;
+      border-left: 3px solid #6366f1;
+    }
+
+    .subtle {
+      color: #6b7280;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: #2563eb;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-list li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #6b7280;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        margin: 15px;
+        padding: 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        padding: 10px 14px;
+      }
+    }
+
+    details {
+      cursor: pointer;
+    }
+
+    details summary {
+      user-select: none;
+      outline: none;
+      list-style: none;
+    }
+
+    details summary:hover {
+      color: inherit;
+    }
+
+
+  </style>
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <p>This is my website hosted on GitHub Pages.</p>
+
+<header>
+  <h1>Anastasia Dimou</h1>
+  <p>Assistant Professor / Computer Science Department / KU Leuven</p>
+  <!-- <p class="subtle">Researcher | PhD Student | Faculty Member</p> -->
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#people">People</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <section id="intro">
+    <h2>Introduction</h2>
+    <p>
+      Welcome to my academic webpage. I am a researcher / faculty member / PhD student in
+      <strong>your field</strong>, with interests in <strong>topic 1</strong>,
+      <strong>topic 2</strong>, and <strong>topic 3</strong>.
+    </p>
+    <p>
+      My work focuses on <strong>your research area</strong>. I am interested in developing
+      methods, tools, and applications that contribute to knowledge in this field.
+    </p>
+    <p>
+      This website contains information about my publications, projects, education, awards,
+      and professional service.
+    </p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <div class="item">
+      <a href="http://orcid.org/0000-0003-2138-7972">DOI</a> |
+      <a href="https://lirias.kuleuven.be/cv?Username=u0142590">KU Leuven Bibliography</a> |
+      <a href="https://scholar.google.be/citations?hl=nl&user=FT80VEAAAAAJ">Google Scholar</a> |
+      <a href="https://dblp.org/pid/55/9872.html">DBLP</a> <br/>
+      <em>Statistics (according to Google Scholar)</em>:<br />
+      <strong>citations:</strong> 3295 | <strong>h-index:</strong> 29 | <strong>i10-index:</strong> 66
+    </div>
+
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <em> RUNNING PROJECTS</em>
+
+    <div class="item">
+      <details>
+        <summary><strong>I3oT</strong></summary>
+        <span class="subtle">FM INFRA | Apr 2026 – Dec 2029</span>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>FAIR</strong> — Flanders AI Research Program</summary>
+        <span class="subtle">Jan 2024 – Dec 2028</span>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>DUCO</strong> — Automatisatieproces van een lerend support systeem voor een self-service kennisorganisatie</summary>
+        <span class="subtle">VLAIO O&O | Jan 2025 – Dec 2027</span>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>MyFairData</strong> — Towards FAIR and industrial data for end-to-end research</summary>
+        <span class="subtle">FM INFRA | Mar 2026 – Feb 2027</span>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>KNODI</strong> — Knowledge-based support for complex data analysis in multi-stage manufacturing</summary>
+        <span class="subtle">VLAIO AI ICON | Oct 2025 – Sep 2027</span>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>TechTalk</strong> — Engineering Services Powered by a Knowledge-Supported Chatbot</summary>
+        <span class="subtle">FM IRVA | Apr 2025 – Sep 2027</span>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>EXKNOP</strong> — EXtracting KNOwledge for Product development engineers</summary>
+        <span class="subtle">FM IRVA | May 2025 – Apr 2027</span>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>REXPEK</strong> — Reproducing Expert Knowledge</summary>
+        <span class="subtle">FM SBO | Nov 2022 – Feb 2027</span><br />
+        <a href="https://rexpek.github.io/">Project page</a>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>REEVALUATE</strong> — Framework for safe, open, collaborative and inclusive digitization and management of cultural heritage</summary>
+        <span class="subtle">HE RIA | Jan 2024 – Dec 2026</span><br />
+        <a href="https://reevaluate.eu/">Project page</a>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>KG4DI</strong> — Knowledge Graphs for Data Integration</summary>
+        <span class="subtle">FWO WoG</span><br />
+        <a href="https://w3id.org/kg4di/">Project page</a>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>EGAS</strong> — Expert-Guided Adhesive Selector</summary>
+        <span class="subtle"><a href="https://www.flandersairesearch.be/en/research/enrichment-projects">FAIR Enrichment Project</a> | Jun 2026 – Sep 2026</span>
+      </details>
+    </div>
+
+    <em>PAST PROJECTS</em>
+
+    <div class="item">
+      <details>
+        <summary><strong>KG4ML</strong> — Knowledge Graphs for Machine Learning</summary>
+        <span class="subtle">KUL IF | Oct 2021 – Sep 2025</span>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>KG3D</strong> — Knowledge Graphs for Intelligent Decision Making of Decentralized Data</summary>
+        <span class="subtle">VLAIO TETRA | Oct 2022 – Sep 2024</span><br />
+        <a href="https://w3id.org/kg3d/">Project page</a>
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary><strong>DKG</strong> — Distributed Knowledge Graphs</summary>
+        <span class="subtle">COST ACTION | May 2020 – Apr 2024</span><br />
+        <a href="https://w3id.org/kg3d/">Project page</a>
+      </details>
+    </div>
+
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="item">
+      <strong>PhD in Computer Science</strong><br />
+      Department of Mathematics and Computer Science, Faculty of Sciences, Antwerp University, Belgium<br />
+      <strong><em>Dissertation</em></strong>: <em>High Quality Linked Data Generation from Heterogeneous Data</em>
+    </div>
+
+    <div class="item">
+      <strong>MSc in Web Science</strong><br />
+      Department of Mathematics, Faculty of Sciences, Aristotle University of Thessaloniki, Greece<br/>
+      <strong><em>Master Thesis</em></strong>: <em>Exploring Scientific Knowledge using Linked Data</em> |
+      published at ESWC2012 (<a href="https://doi.org/10.1007/978-3-642-30284-8_58">paper</a>) & CICM2012 (<a href="https://doi.org/10.1007/978-3-642-31374-5_36">paper</a>)
+
+    </div>
+
+    <div class="item">
+      <strong>MSc in Technologies for E – Government</strong><br />
+      Department of Information Engineering and Computer Science, Faculty of Sciences, University of Trento, Italy<br/>
+      <strong><em>Master Thesis</em></strong>: <em>Semantic Wiki Engines</em> |
+      published at LiLe-2012, co-located with WWW-2012 (<a href="https://ceur-ws.org/Vol-840/03-paper-26.pdf">paper</a>)
+    </div>
+
+    <div class="item">
+      <strong>BSc in Computer Science</strong><br />
+      Department of Computer Science, Faculty of Sciences, Aristotle University of Thessaloniki, Greece<br/>
+      <strong><em>Bachelor Thesis</em></strong>: <em>Broadband and e-Learning </em> |
+      published at AICT2009 (<a href="doi.org/10.1109/AICT.2009.65">paper</a>)
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2>Awards</h2>
+
+    <div class="item">
+      <strong>SWSA Distinguished Dissertation Award</strong>  on Semantic Web technologies for the PhD thesis<br />
+      Semantic Web Science Association (SWSA). Monterey, California, USA. Oct 2018
+    </div>
+
+    <div class="item">
+      <strong>1st prize for SemTab 2023 Challenge</strong> sponsored by IBM Research<br/>
+      TorchicTab: Semantic Table Annotation with Wikidata and Language Models.<br/>
+      Semantic Web Challenge on Tabular Data to Knowledge Graph Matching (SemTab) 2023, co-located with ISWC 2023. Athens, Greece
+    </div>
+
+    <div class="item">
+      <strong>Best PC member (reviewer) award</strong><br/>
+      for the Resource Track of ISWC2023 & ESWC2022
+      </div>
+
+    <div class="item">
+      <strong>Honourable mention - outstanding Senior PC member</strong><br/>
+      for the Research & Resource Track of ISWC2024
+    </div>
+
+    <div class="item">
+      <strong>Best Paper Award</strong> at 35th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec 2021)<br />
+      for the paper: <a href="https://doi.org/10.1007/978-3-030-81242-3_15">A Rewarding Framework for Crowdsourcing to Increase Privacy Awareness</a><br/>
+      July 19th – July 20th 2021 Calgary, Canada (online).
+    </div>
+
+    <div class="item">
+      <strong>Best Poster Award</strong> at the International Semantic Web Conference 2015 (ISWC2015), Bethlehem, Pennsylvania, USA<br />
+      for the paper:
+      Test-driven Assessment of [R2]RML Mappings to Improve Dataset Quality. <br/>
+    </div>
+
+  </section>
+
+  <section id="service">
+    <h2>Service</h2>
+
+    <div class="item">
+      <details>
+      <summary><strong>Organization Committee Member</strong></summary>
+      <em>Program Chair</em> at SEMANTiCS 2026<br/>
+      <em>Research Track Chair</em> at Extended Semantic Web Conference (ESWC) 2024<br />
+      <em>Resource Track Chair</em> at Extended Semantic Web Conference (ESWC) 2023<br />
+      <em>Workshops & Tutorials Chair</em> at Extended Semantic Web Conference (ESWC) 2022<br />
+      <em>Poster & Demo Chair</em> at Extended Semantic Web Conference (ESWC) 2021<br />
+      <em>Research & Innovation Chair</em> at SEMANTiCS 2022<br />
+      <em>Poster & Demo Chair</em> at International Semantic Web Conference (ISWC) 2022<br />
+      <em>Sponsorship & Publicity Chair</em> at International Semantic Web Conference (ISWC) 2021<br />
+      <em>Workshops & Tutorials Chair</em> at Knowledge Engineering & Knowledge Management Conference (EKAW) 2020
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary>
+          <strong>Journal Special Issue Editor</strong></summary>
+      Knowledge Graphs Construction @ Semantic Web Journal (2024)<br/>
+      Knowledge Graphs Validation and Quality @ Semantic Web Journal (2023)
+      </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary>
+          <strong>Senior Program Committee Member</strong></summary>
+      Extended Semantic Web Conference (ESWC)
+      Research Track 2023, 2025, 2026 | Resource Track 2026 <br/>
+      International Semantic Web Conference (ISWC) 2023, 2024 <br/>
+      The Web Conference - Semantics and Knowledge Track 2022
+        </details>
+    </div>
+
+    <div class="item">
+      <details>
+        <summary>
+          <strong>Program Committee Member</strong></summary>
+
+        <strong>Extended Semantic Web Conference (ESWC)</strong><br/>
+        <em>Research Track 2022</em> <br/>
+        <em>Resource Track</em> 2019, 2020, 2022, 2023, 2024, 2026 <br/>
+        <em>In-Use Track</em> 2018, 2022 <br/>
+        <em>Posters&Demos</em> 2017, 2018, 2019, 2020 <br/>
+        <em>PhD consortium</em> 2021, 2022, 2023, 2024<br />
+        <strong>International Semantic Web Conference (ISWC)</strong><br/>
+        <em>Research Track</em> 2020, 2021, 2022 <br/>
+        <em>Resources Track</em> 2019, 2020, 2021, 2022 <br/>
+        <em>Posters&Demos</em> 2017, 2018, 2019, 2020, 2021<br />
+        <strong>The Web Conference</strong><br/>
+        <em>Semantic & Knowledge Track</em> 2023, 2024, 2026 <br/>
+        <em>System & Infrastructure</em> 2022 | <em>Developers</em> 2021<br />
+        <strong>SEMANTICS</strong>
+        <em>Research, Posters & Demos</em> 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2024<br />
+        <strong>Knowledge Engineering & Knowledge Management Conference (EKAW)</strong> 2020, 2022<br />
+        <strong>International Conference on Knowledge Capture (K-CAP)</strong> 2019, 2021, 2023<br />
+        <strong> International Conference on Extending Database Technology (EDBT)</strong> Research 2025, 2026<br />
+        <strong>SWSA Dissertation Award</strong> 2025, 2026<br/>
+
+        <strong>Joint Conference on Rules and Reasoning (RuleML+RR2024)</strong><br />
+        <strong>Conference on Artificial Intelligence</strong> 2026, 2024, 2023<br />
+        <strong>International Conference on Information and Knowledge Management (CIKM)</strong> Research track 2020, 2021<br />
+
+        ECAI2024, ECMLPKKD2024 (emergency review),
+        IJCAI 2022, 2024,
+        ICDE 2026
+    </div>
+  </section>
+
+  <section id="people">
+    <h2>People</h2>
+    <div class="item">
+      <details>
+        <summary><strong>current PhD students</strong></summary>
+        <ul>
+          <li><strong>Ioannis Dasoulas</strong> (2023-2026) </li>
+          <li><strong>Xuemin Duan</strong> (2023-2026) </li>
+          <li><strong>Ali Elhalawati</strong> (2024-2027) </li>
+          <li><strong>Duo Yang</strong> (2024-2027) </li>
+          <li><strong>Ruben Peeters</strong> (2025-2028) </li>
+          <li><strong>Fotis Kalioras</strong> (2025-2028) </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><strong>former PhD students</strong></summary>
+      <ul>
+        <li>Ioannis Chrysakis (Ghent University & KU Leuven, 2026)</li>
+        <li>Arcangelo Massari (Bologna University & KU Leuven, 2026)</li>
+        <li>Dylan Van Assche (Ghent University, 2024)</li>
+        <li>Sven Lieber (Ghent University, 2021)</li>
+        <li>Ben De Meester (Ghent University, 2020)</li>
+        <li>Pieter Heyvaert (Ghent university, 2019)</li>
+      </ul>
+        </details>
+    </div>
+  </section>
+
+
+
+</div>
+
+<footer>
+  <p>© 2026 Your Name. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
